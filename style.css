@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('normalize.css');
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    background-color: var(--cream);
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 66px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.balance {
+    color: var(--very-pale-orange);
+    background: url('./images/logo.svg') no-repeat top 1.6875rem right 1.5rem var(--soft-red);
+    background-size: 60px 40px;
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.balance h1 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.balance p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.spending {
+    color: var(--dark-brown);
+    background-color: var(--very-pale-orange);
+    border-radius: 0.625rem;
+    padding: 1.625rem 1.25rem 1.5rem;
+}
+
+.spending h2 {
+    margin-bottom: 2rem;
+}
+
+.week {
+    font-size: 0.75rem;
+    color: var(--medium-brown);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid var(--cream);
+}
+
+.spending h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--medium-brown);
+    margin: 0 0 0.5rem;
+}
+
+.total-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.total-wrapper div:last-child {
+    text-align: right;
+    margin-left: auto;
+}
+
+.total-wrapper div:last-child p:first-child {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.total-wrapper div:last-child p:last-child {
+    font-size: 15px;
+    color: var(--medium-brown);
+}
+
+.total {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
