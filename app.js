@@ -26,7 +26,7 @@ async function handleData() {
         tooltips[i].textContent = `$${data[i].amount}`;
         
         // if date equals today
-        if (i + 2 == date.getDay()) {
+        if (i + 1 == date.getDay()) {
             // set class to today
             bars[i].classList.add("today");
         }
